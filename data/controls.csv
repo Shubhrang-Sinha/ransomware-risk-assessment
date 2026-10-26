@@ -1,0 +1,26 @@
+control_id,question,csf_function,why_it_matters
+C01,Do you run phishing awareness training and simulated phishing at least quarterly?,Protect,Most ransomware starts with an email. Trained staff report suspicious messages instead of clicking.
+C02,Is inbound email filtered with attachment sandboxing and link protection?,Protect,Blocks many malicious attachments and links before they reach inboxes.
+C03,Is multi-factor authentication (MFA) enforced on all VPN and remote access?,Protect,A stolen password alone is no longer enough to log in.
+C04,Is Remote Desktop (RDP) blocked from direct internet exposure?,Protect,Internet-exposed RDP is one of the most common ransomware entry points.
+C05,Are critical and actively exploited vulnerabilities patched within 72 hours?,Protect,Attackers weaponise newly published flaws within days.
+C06,Do you keep an automatically updated inventory of all IT assets?,Identify,You cannot protect or patch what you do not know exists.
+C07,Do you scan for vulnerabilities continuously and prioritise by exploitability?,Identify,Focuses limited time on the flaws attackers actually use.
+C08,Do you use privileged access management and separate admin accounts (tiered admin)?,Protect,Limits how far a single stolen account can spread.
+C09,Is the network segmented so workstations cannot freely reach servers and backups?,Protect,Stops ransomware from spreading everywhere at once.
+C10,Do you keep immutable or offline backups with separate credentials?,Protect,Attackers try to delete backups first; immutable copies survive.
+C11,Do you test restoring from backups at least quarterly?,Recover,A backup that has never been restored is only a hope.
+C12,Is EDR (endpoint detection and response) deployed on all endpoints and servers?,Detect,Detects ransomware behaviour and can isolate a machine automatically.
+C13,Are logs centralised in a SIEM and monitored 24/7 (in-house or managed service)?,Detect,Attacks often happen at night or weekends; someone must be watching.
+C14,Do you use data-loss-prevention and egress filtering to spot bulk data leaving?,Protect,Helps catch data theft used for double extortion.
+C15,Is sensitive data classified and encrypted at rest?,Protect,Reduces the value of stolen data and shows where it lives.
+C16,Do you have a ransomware incident response playbook tested in the last 12 months?,Respond,Rehearsed teams respond faster and make fewer mistakes.
+C17,Do you have a crisis communications and legal/regulatory notification plan?,Respond,Late or messy notification multiplies fines and reputational damage.
+C18,Do you assess vendor security and include security clauses in contracts?,Govern,Suppliers and IT providers are a common route into customers.
+C19,Does the board or executive team receive cyber risk reporting at least quarterly?,Govern,Leadership attention is what turns findings into funded fixes.
+C20,Do you have a documented ransom-payment decision policy and cyber insurance?,Govern,Decisions made in a crisis without a policy are slow and risky.
+C21,Have you completed a business impact analysis with recovery targets (RTO/RPO)?,Identify,Tells you which systems to restore first and how fast.
+C22,Is your disaster recovery plan updated and exercised in the last 12 months?,Recover,Shortens the time to restore critical services.
+C23,Do you run lessons-learned reviews after every incident or exercise?,Identify,Makes sure the same weakness is not exploited twice.
+C24,Do you use a password manager and monitor for leaked employee credentials?,Protect,Stolen credentials are sold and reused by ransomware groups.
+C25,Are legacy or unpatchable and OT systems isolated with compensating controls?,Protect,"Old systems cannot be fixed easily, so they must be walled off."

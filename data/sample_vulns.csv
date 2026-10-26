@@ -1,0 +1,11 @@
+host,internet_facing,cve,severity
+web-01,yes,CVE-2021-44228,Critical
+ft-01,yes,CVE-2023-34362,Critical
+vpn-gw,yes,CVE-2024-3400,Critical
+web-02,yes,CVE-2023-38545,High
+rdp-srv-02,no,CVE-2019-0708,Critical
+print-01,no,CVE-2021-34527,High
+app-03,no,CVE-2022-0778,High
+db-01,no,CVE-2021-3449,Medium
+hr-pc-14,no,CVE-2023-38545,Medium
+file-01,no,CVE-2022-0778,Medium

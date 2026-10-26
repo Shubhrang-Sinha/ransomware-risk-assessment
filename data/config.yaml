@@ -1,0 +1,23 @@
+# Settings an organisation can tune WITHOUT touching any Python code.
+
+scale_max: 5            # likelihood and impact are scored 1..5
+
+# A score at or below the number gets that rating; above "high" is Critical.
+rating_thresholds:
+  low: 5
+  medium: 12
+  high: 19
+
+# How much each questionnaire answer counts (1 = control fully in place).
+# NOTE: quotes are required, otherwise YAML turns Yes/No into True/False.
+answer_values:
+  "Yes": 1.0
+  "Partial": 0.5
+  "No": 0.0
+
+# Threat-intelligence settings (CISA Known Exploited Vulnerabilities feed)
+kev:
+  feed_url: https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+  timeout_seconds: 8
+  bump_internet_facing: 1.0   # likelihood +1 if an exploited flaw is on an internet-facing host
+  bump_internal_only: 0.5     # likelihood +0.5 if only on internal hosts
